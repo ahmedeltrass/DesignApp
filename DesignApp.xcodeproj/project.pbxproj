@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E063180128E1B5D800963618 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E063180028E1B5D800963618 /* GoogleService-Info.plist */; };
 		E06C94D128E04D9C000FDF60 /* TopicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06C94D028E04D9C000FDF60 /* TopicsTableViewCell.swift */; };
 		E06C94D328E0502F000FDF60 /* Topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06C94D228E0502F000FDF60 /* Topics.swift */; };
 		E07B27B328D023EA00AC2EBD /* HandBookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07B27B228D023EA00AC2EBD /* HandBookCollectionViewCell.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E063180028E1B5D800963618 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E06C94D028E04D9C000FDF60 /* TopicsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsTableViewCell.swift; sourceTree = "<group>"; };
 		E06C94D228E0502F000FDF60 /* Topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topics.swift; sourceTree = "<group>"; };
 		E07B27B228D023EA00AC2EBD /* HandBookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandBookCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				E08171F828CE3B3F00C95F11 /* Assets.xcassets */,
 				E08171FA28CE3B3F00C95F11 /* LaunchScreen.storyboard */,
 				E08171FD28CE3B3F00C95F11 /* Info.plist */,
+				E063180028E1B5D800963618 /* GoogleService-Info.plist */,
 			);
 			path = DesignApp;
 			sourceTree = "<group>";
@@ -160,6 +163,8 @@
 			dependencies = (
 			);
 			name = DesignApp;
+			packageProductDependencies = (
+			);
 			productName = DesignApp;
 			productReference = E08171EC28CE3B3800C95F11 /* DesignApp.app */;
 			productType = "com.apple.product-type.application";
@@ -188,6 +193,8 @@
 				Base,
 			);
 			mainGroup = E08171E328CE3B3800C95F11;
+			packageReferences = (
+			);
 			productRefGroup = E08171ED28CE3B3800C95F11 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E08171FC28CE3B3F00C95F11 /* LaunchScreen.storyboard in Resources */,
+				E063180128E1B5D800963618 /* GoogleService-Info.plist in Resources */,
 				E08171F928CE3B3F00C95F11 /* Assets.xcassets in Resources */,
 				E08171F728CE3B3800C95F11 /* Main.storyboard in Resources */,
 			);

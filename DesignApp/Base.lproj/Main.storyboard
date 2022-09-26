@@ -1047,6 +1047,85 @@
             </objects>
             <point key="canvasLocation" x="1612" y="903"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="SUK-2j-0Mf">
+            <objects>
+                <viewController id="kWy-Nx-uh4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P4H-s1-bVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background01" translatesAutoresizingMaskIntoConstraints="NO" id="EwO-Ww-9Jw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9y-J4-LpF" customClass="CustomView" customModule="DesignApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="198" width="374" height="500"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3AX-8s-l16" customClass="CustomBlurView" customModule="DesignApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="500"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="egw-WI-JvS">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="500"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <blurEffect style="regular"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </visualEffectView>
+                                </subviews>
+                                <color key="backgroundColor" name="BlurBackground"/>
+                                <constraints>
+                                    <constraint firstItem="3AX-8s-l16" firstAttribute="leading" secondItem="r9y-J4-LpF" secondAttribute="leading" id="Bp4-fg-TsK"/>
+                                    <constraint firstItem="3AX-8s-l16" firstAttribute="top" secondItem="r9y-J4-LpF" secondAttribute="top" id="Ns2-Ws-dIa"/>
+                                    <constraint firstAttribute="height" constant="500" id="eAS-Mu-zJ3"/>
+                                    <constraint firstAttribute="bottom" secondItem="3AX-8s-l16" secondAttribute="bottom" id="nSP-MX-WUd"/>
+                                    <constraint firstAttribute="trailing" secondItem="3AX-8s-l16" secondAttribute="trailing" id="tIe-9n-MN8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.14999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffset">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" name="Shadow"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="quaternaryLabelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CMU-ZC-jrd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r9y-J4-LpF" firstAttribute="leading" secondItem="CMU-ZC-jrd" secondAttribute="leading" constant="20" id="1dH-xk-OJz"/>
+                            <constraint firstItem="EwO-Ww-9Jw" firstAttribute="trailing" secondItem="CMU-ZC-jrd" secondAttribute="trailing" id="7jy-t0-Dd2"/>
+                            <constraint firstItem="CMU-ZC-jrd" firstAttribute="trailing" secondItem="r9y-J4-LpF" secondAttribute="trailing" constant="20" id="AUC-lN-oVu"/>
+                            <constraint firstItem="EwO-Ww-9Jw" firstAttribute="leading" secondItem="CMU-ZC-jrd" secondAttribute="leading" id="MWB-nD-MDQ"/>
+                            <constraint firstAttribute="bottom" secondItem="EwO-Ww-9Jw" secondAttribute="bottom" id="Rm5-tB-Xt5"/>
+                            <constraint firstItem="EwO-Ww-9Jw" firstAttribute="top" secondItem="P4H-s1-bVZ" secondAttribute="top" id="ZJm-XL-VE1"/>
+                            <constraint firstItem="r9y-J4-LpF" firstAttribute="centerX" secondItem="P4H-s1-bVZ" secondAttribute="centerX" id="hef-cB-8gC"/>
+                            <constraint firstItem="r9y-J4-LpF" firstAttribute="centerY" secondItem="P4H-s1-bVZ" secondAttribute="centerY" id="na7-c1-X4p"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VdB-bV-tCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1326.0869565217392" y="81.696428571428569"/>
+        </scene>
         <!--Explore-->
         <scene sceneID="Ls7-VI-zRV">
             <objects>
@@ -1630,8 +1709,11 @@
         <namedColor name="AccentColor">
             <color red="0.3843137254901961" green="0.20392156862745098" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <namedColor name="BlurBackground">
+            <color red="1" green="1" blue="1" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="PrimaryBackground">
-            <color red="0.94900000095367432" green="0.9649999737739563" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.96470588235294119" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Shadow">
             <color red="0.27099999785423279" green="0.16500000655651093" blue="0.48600000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1639,6 +1721,9 @@
         <namedColor name="TabBarTint">
             <color red="0.38400000333786011" green="0.20399999618530273" blue="0.83499997854232788" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <systemColor name="quaternaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
