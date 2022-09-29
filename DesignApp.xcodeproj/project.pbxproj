@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F2F52CC1F252BC677D57686 /* Pods_DesignApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83588F752E40055BEE575D00 /* Pods_DesignApp.framework */; };
 		E02B2A9928E32FDB00F7B85A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02B2A9828E32FDA00F7B85A /* LoginViewController.swift */; };
 		E063180128E1B5D800963618 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E063180028E1B5D800963618 /* GoogleService-Info.plist */; };
 		E06C94D128E04D9C000FDF60 /* TopicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06C94D028E04D9C000FDF60 /* TopicsTableViewCell.swift */; };
@@ -30,19 +31,19 @@
 		E083DCA128DF7E14005EAFC0 /* SectionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E083DCA028DF7E13005EAFC0 /* SectionsCollectionViewCell.swift */; };
 		E083DCA328DF7FF5005EAFC0 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E083DCA228DF7FF5005EAFC0 /* ExploreViewController.swift */; };
 		E0EE0A8428D329F800C73021 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EE0A8328D329F800C73021 /* CourseViewController.swift */; };
-		EFCE266E14EF72D5491169A2 /* Pods_DesignApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CD872F3527A71ACD1A5C6E /* Pods_DesignApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		06E46B63C8350B9135911408 /* Pods-DesignApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignApp.release.xcconfig"; path = "Target Support Files/Pods-DesignApp/Pods-DesignApp.release.xcconfig"; sourceTree = "<group>"; };
 		7E8E3DBAC72B161BD527FBF9 /* Pods-DesignApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignApp.debug.xcconfig"; path = "Target Support Files/Pods-DesignApp/Pods-DesignApp.debug.xcconfig"; sourceTree = "<group>"; };
+		83588F752E40055BEE575D00 /* Pods_DesignApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02B2A9828E32FDA00F7B85A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E063180028E1B5D800963618 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E06C94D028E04D9C000FDF60 /* TopicsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsTableViewCell.swift; sourceTree = "<group>"; };
 		E06C94D228E0502F000FDF60 /* Topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topics.swift; sourceTree = "<group>"; };
 		E07B27B228D023EA00AC2EBD /* HandBookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandBookCollectionViewCell.swift; sourceTree = "<group>"; };
 		E07FB0CC28DD9A5100F832B9 /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
-		E08171EC28CE3B3800C95F11 /* DesignApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E08171EC28CE3B3800C95F11 /* DesignApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = DesignApp.app; path = "/Users/lapstore/Desktop/DesignApp/build/Debug-iphoneos/DesignApp.app"; sourceTree = "<absolute>"; };
 		E08171EF28CE3B3800C95F11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E08171F128CE3B3800C95F11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E08171F328CE3B3800C95F11 /* FeaturedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedVC.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		E083DC9E28DF2759005EAFC0 /* CutomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutomTabBarViewController.swift; sourceTree = "<group>"; };
 		E083DCA028DF7E13005EAFC0 /* SectionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E083DCA228DF7FF5005EAFC0 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
-		E0CD872F3527A71ACD1A5C6E /* Pods_DesignApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0EE0A8328D329F800C73021 /* CourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFCE266E14EF72D5491169A2 /* Pods_DesignApp.framework in Frameworks */,
+				5F2F52CC1F252BC677D57686 /* Pods_DesignApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,22 +85,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		884338E8D0ADB5B1DF6D8C4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83588F752E40055BEE575D00 /* Pods_DesignApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E08171E328CE3B3800C95F11 = {
 			isa = PBXGroup;
 			children = (
 				E08171EE28CE3B3800C95F11 /* DesignApp */,
-				E08171ED28CE3B3800C95F11 /* Products */,
 				84D954A6DBA7A85FCF7C44CD /* Pods */,
-				FD5AECF1D4D76C5AFCEC9AA9 /* Frameworks */,
+				884338E8D0ADB5B1DF6D8C4F /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		E08171ED28CE3B3800C95F11 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E08171EC28CE3B3800C95F11 /* DesignApp.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		E08171EE28CE3B3800C95F11 /* DesignApp */ = {
@@ -166,14 +165,6 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		FD5AECF1D4D76C5AFCEC9AA9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E0CD872F3527A71ACD1A5C6E /* Pods_DesignApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,7 +177,6 @@
 				E08171E928CE3B3800C95F11 /* Frameworks */,
 				E08171EA28CE3B3800C95F11 /* Resources */,
 				1E9B14BF416C9207A97654D3 /* [CP] Embed Pods Frameworks */,
-				E3DD5086BEEB050202ABF9C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,7 +211,7 @@
 				Base,
 			);
 			mainGroup = E08171E328CE3B3800C95F11;
-			productRefGroup = E08171ED28CE3B3800C95F11 /* Products */;
+			productRefGroup = E08171E328CE3B3800C95F11;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -282,23 +272,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E3DD5086BEEB050202ABF9C0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DesignApp/Pods-DesignApp-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DesignApp/Pods-DesignApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesignApp/Pods-DesignApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
