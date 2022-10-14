@@ -9,12 +9,15 @@ import UIKit
 import Firebase 
 import Combine
 class LoginViewController: UIViewController {
+    enum LoginStates {
+    case SignUp
+    case SignIn
+    }
 
     @IBOutlet weak var loginCard: CustomBlurView!
     @IBOutlet weak var titleLabel: UILabel!
     
-    @IBOutlet weak var praimaryBtn: CustomView!
-    
+    @IBOutlet weak var praimaryBtn:  UIButton!
     @IBOutlet weak var scandaryBtn: UIButton!
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -23,7 +26,15 @@ class LoginViewController: UIViewController {
     var  emailIsEmpty = true
     var passwordIsEmpty = true
     private var token : Set<AnyCancellable> = []
-  
+    var LoginState : LoginStates = .SignUp {
+        didSet{
+            self.titleLabel.text = (LoginState == .SignUp) ? "Sign Up" : "Sign In"
+            self.praimaryBtn.setTitle((LoginState == .SignUp) ? "Create Account" : "Sign In", for:.normal)
+            self.scandaryBtn.setTitle((LoginState == .SignUp) ? "Dont Have Any Account" : "Already Have  An Account", for: .normal)
+            self.passwordTextField.textContentType = (LoginState == .SignUp) ? .newPassword : .password
+            
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +66,7 @@ class LoginViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
             
         }else{
+            if LoginState == .SignUp {
             Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!)
              { result,error in
                 guard error == nil else {
@@ -64,12 +76,23 @@ class LoginViewController: UIViewController {
                 }
                  self.goHomeScreen()
             }
+            }
+            else{
+                Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { authResult, error in
+                    guard error == nil else {
+                        print(error!.localizedDescription)
+                        
+                         return
+                }
+                    self.goHomeScreen()
+            }
         }
        
     }
     
-   
+    }
     @IBAction func scondaryButtonAction(_ sender: Any) {
+        self.LoginState = (self.LoginState == .SignUp) ? .SignIn : .SignUp
     }
     
     func goHomeScreen(){
